@@ -8,6 +8,11 @@ A modern web application that helps developers clean up and manage their GitHub 
 
 Visit the live application: [GitHub Repo Remover](https://github-repo-remover.vercel.app)
 
+## 🔗 Project Repositories
+
+- **Frontend**: [github_repo_remover_react](https://github.com/Rakibulislam-emon/github_repo_remover)
+- **Backend**: [github_repo_remover_node](https://github.com/Rakibulislam-emon/github_repo_remover_node)
+
 ## ✨ Features
 
 - **GitHub OAuth Integration**: Secure authentication with GitHub
@@ -50,19 +55,23 @@ Visit the live application: [GitHub Repo Remover](https://github-repo-remover.ve
 
 ### Installation and Setup
 
-#### 1. Clone the repository
+#### 1. Clone the repositories
 ```bash
+# Clone frontend
 git clone https://github.com/Rakibulislam-emon/github_repo_remover_react.git
 cd github_repo_remover_react
+
+# Clone backend
+git clone https://github.com/Rakibulislam-emon/github_repo_remover_node.git
 ```
 
 #### 2. Frontend Setup
 ```bash
-cd client
+cd github_repo_remover_react
 npm install
 ```
 
-Create a `.env` file in the client directory:
+Create a `.env` file in the frontend directory:
 ```
 VITE_API_URL=http://localhost:5000
 ```
@@ -74,11 +83,11 @@ npm run dev
 
 #### 3. Backend Setup
 ```bash
-cd ../server
+cd ../github_repo_remover_node
 npm install
 ```
 
-Create a `.env` file in the server directory:
+Create a `.env` file in the backend directory:
 ```
 PORT=5000
 GITHUB_CLIENT_ID=your_github_client_id
@@ -104,30 +113,31 @@ npm run dev
 
 ## 📁 Project Structure
 
+### Frontend Structure
 ```
 github_repo_remover_react/
-├── client/                 # Frontend React application
-│   ├── public/             # Static files
-│   ├── src/                # Source files
-│   │   ├── components/     # React components
-│   │   │   ├── auth/       # Authentication components
-│   │   │   ├── layout/     # Layout components
-│   │   │   ├── repos/      # Repository management components
-│   │   │   └── router/     # Routing configuration
-│   │   ├── assets/         # Images, fonts, etc.
-│   │   ├── App.jsx         # Main application component
-│   │   └── main.jsx        # Entry point
-│   ├── index.html          # HTML template
-│   └── vite.config.js      # Vite configuration
-│
-├── server/                 # Backend Node.js application
-│   ├── config/             # Configuration files
-│   ├── controllers/        # Request handlers
-│   ├── routes/             # API routes
-│   ├── utils/              # Utility functions
-│   └── index.js            # Entry point
-│
-└── README.md               # Project documentation
+├── public/             # Static files
+├── src/                # Source files
+│   ├── components/     # React components
+│   │   ├── auth/       # Authentication components
+│   │   ├── layout/     # Layout components
+│   │   ├── repos/      # Repository management components
+│   │   └── router/     # Routing configuration
+│   ├── assets/         # Images, fonts, etc.
+│   ├── App.jsx         # Main application component
+│   └── main.jsx        # Entry point
+├── index.html          # HTML template
+└── vite.config.js      # Vite configuration
+```
+
+### Backend Structure
+```
+github_repo_remover_node/
+├── config/             # Configuration files
+├── controllers/        # Request handlers
+├── routes/             # API routes
+├── utils/              # Utility functions
+└── index.js            # Entry point
 ```
 
 ## 🔒 Security
@@ -140,8 +150,8 @@ github_repo_remover_react/
 ## 🚢 Deployment
 
 The application is deployed using:
-- **Frontend**: [Vercel](https://vercel.com)
-- **Backend**: [Vercel](https://vercel.com)
+- **Frontend**: [Vercel](https://vercel.com) - [github-repo-remover.vercel.app](https://github-repo-remover.vercel.app)
+- **Backend**: [Vercel](https://vercel.com) - [github-repo-remover-node.vercel.app](https://github-repo-remover-node.vercel.app)
 
 ## 👨‍💻 About the Developer
 
@@ -156,3 +166,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [GitHub API](https://docs.github.com/en/rest) for providing the API
 - [React Icons](https://react-icons.github.io/react-icons/) for the icon library
 - [Tailwind CSS](https://tailwindcss.com/) for the styling framework
+- 
